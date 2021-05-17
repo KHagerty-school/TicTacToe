@@ -1,5 +1,63 @@
+import java.awt.*;
+
 Class Main {
-  public static void Main(String[] args){
+  public void gameBoard() {
+  char board = new Array[][];
+  board = {' ', '|', ' ', '|', ' '} {'-', '+', '-', '+', '-'} {' ', '|', ' ', '|', ' '} {'-', '+', '-', '+', '-'} {' ', '|', ' ', '|', ' '};
+  System.out.print(board);
   
+  
+  player1();
+  player2();
+  
+  if p1 = true;
+    System.out.print("Player 1 wins");
+  if p1 = true;
+    System.out.print("Player 2 wins");
+  }
+  
+  public boolean player1() {
+    boolean p1 = false;
+    if (board[0][0] == 'X' && board[0][2] == 'X' && board[0][4] == 'X') //first row
+      p1 = true;
+    if (board[2][0] == 'X' && board[2][2] == 'X' && board[2][4] == 'X') //second row
+      p1 = true;
+    if (board[4][0] == 'X' && board[4][2] == 'X' && board[4][4] == 'X') //third row
+      p1 = true;
+    if (board[0][0] == 'X' && board[2][0] == 'X' && board[4][0] == 'X') //first col
+      p1 = true;
+    if (board[0][2] == 'X' && board[2][2] == 'X' && board[4][2] == 'X') //second col
+      p1 = true;
+    if (board[0][4] == 'X' && board[2][4] == 'X' && board[4][4] == 'X') //third col
+      p1 = true;
+    if (board[0][0] == 'X' && board[2][2] == 'X' && board[4][4] == 'X') //first diagonal
+      p1 = true;
+    if (board[4][0] == 'X' && board[2][2] == 'X' && board[0][4] == 'X') //first diagonal
+      p1 = true;
+  }
+  
+  public boolean player2() {
+    boolean p1 = false;
+    if (board[0][0] == 'O' && board[0][2] == 'O' && board[0][4] == 'O') //first row
+      p1 = true;
+    if (board[2][0] == 'O' && board[2][2] == 'O' && board[2][4] == 'O') //second row
+      p1 = true;
+    if (board[4][0] == 'O' && board[4][2] == 'O' && board[4][4] == 'O') //third row
+      p1 = true;
+    if (board[0][0] == 'O' && board[2][0] == 'O' && board[4][0] == 'O') //first col
+      p1 = true;
+    if (board[0][2] == 'O' && board[2][2] == 'O' && board[4][2] == 'O') //second col
+      p1 = true;
+    if (board[0][4] == 'O' && board[2][4] == 'O' && board[4][4] == 'O') //third col
+      p1 = true;
+    if (board[0][0] == 'O' && board[2][2] == 'O' && board[4][4] == 'O') //first diagonal
+      p1 = true;
+    if (board[4][0] == 'O' && board[2][2] == 'O' && board[0][4] == 'O') //first diagonal
+      p1 = true;
+  }
+  
+  public boolean noWinner() {
+    boolean tie = false;
+    if (board[0][0] != ' ' && board[0][2] != ' ' && board[0][4] != ' ' &&
   }
 }
